@@ -1463,6 +1463,7 @@ elseif(APPLE)
 else()
 	target_link_libraries(PCSX2_FLAGS INTERFACE
 		GTK::gtk
+		HarfBuzz::HarfBuzz
 		OpenGL::GL
 		PCAP::PCAP
 		LibXml2::LibXml2

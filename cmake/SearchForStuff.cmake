@@ -166,6 +166,9 @@ else()
 	if(WAYLAND_API)
 		find_package(Wayland REQUIRED)
 	endif()
+
+	## Use pcsx2 package to find module
+	find_package(HarfBuzz)
 endif(WIN32)
 
 # Require threads on all OSes.
