@@ -95,7 +95,7 @@ target_sources(pcsx2-qt PRIVATE
 target_precompile_headers(pcsx2-qt PRIVATE PrecompiledHeader.h)
 
 target_include_directories(pcsx2-qt PRIVATE
-	${Qt6Gui_PRIVATE_INCLUDE_DIRS}
+	${Qt5Gui_PRIVATE_INCLUDE_DIRS}
 	"${CMAKE_BINARY_DIR}/common/include"
 	"${CMAKE_SOURCE_DIR}/pcsx2"
 	"${CMAKE_SOURCE_DIR}/pcsx2-qt"
@@ -104,8 +104,8 @@ target_include_directories(pcsx2-qt PRIVATE
 target_link_libraries(pcsx2-qt PRIVATE
 	PCSX2_FLAGS
 	PCSX2
-	Qt6::Core
-	Qt6::Gui
-	Qt6::Widgets
-	Qt6::Network
+	Qt5::Core
+	Qt5::Gui
+	Qt5::Widgets
+	Qt5::Network
 )

@@ -243,7 +243,7 @@ if(QT_BUILD)
 	endif()
 
 	# Find the Qt components that we need.
-	find_package(Qt6 COMPONENTS CoreTools Core GuiTools Gui WidgetsTools Widgets Network LinguistTools REQUIRED)
+	find_package(Qt5 COMPONENTS Core Gui Widgets Network REQUIRED)
 
 	# We use the bundled (latest) SDL version for Qt.
 	add_subdirectory(3rdparty/sdl2 EXCLUDE_FROM_ALL)
